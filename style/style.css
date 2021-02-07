@@ -1,0 +1,52 @@
+:root {
+  --bg-colour: #EAEBEA;
+  --content-bg-colour: white;
+  --shadow-colour: #b4b9b4;
+  --accent-colour: #FF4F00;
+  --secondary-colour: #2176FF;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--bg-colour);
+}
+
+
+#container {
+  margin: 5em auto;
+  width: 30em;
+}
+
+header h1 {
+  background-color: var(--accent-colour); 
+  color: var(--bg-colour);
+  width: fit-content;
+  width: -moz-max-content;
+  padding: 0.1em;
+}
+
+#content {
+  padding: 2.5em;
+  background-color: var(--content-bg-colour);
+  box-shadow: 0em 1em 1em 0.01em var(--shadow-colour);
+}
+
+article a {
+  display: inline-block;
+  padding: 1em;
+  
+  box-sizing: border-box;
+  
+  background-color: var(--secondary-colour);
+  color: white;
+  text-decoration: none;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+article a:hover {
+  box-shadow: 0em 0.3em 0.5em 0.01em var(--shadow-colour);
+  text-decoration: underline;
+  transform: scale(1.1, 1.1);
+}
